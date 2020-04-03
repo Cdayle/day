@@ -20,7 +20,7 @@ class Config:
 class DevelompentConfig(Config):
 	"""生产模式"""
 	DEBUG = True
-	SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or 'mysql://root:@localhost:3306/login'
+	SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or 'mysql://root:@localhost:3306/everday'
 
 class TestingConfig(Config):
 	TESTING = True
